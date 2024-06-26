@@ -13,6 +13,10 @@ function CounterCheck() {
     setCount(count - 1)
   }
 
+  const handleReset = () => {
+    setCount(0)
+  }
+
   return (
     <>
         <div className="container">
@@ -21,6 +25,7 @@ function CounterCheck() {
 
         <div className="btns-container">
             <button onClick={handleInc} className="inc">+</button>
+            <button onClick={handleReset} className="dec">Reset</button>
             <button onClick={handleDec} className="dec">-</button>
         </div>
     </>
